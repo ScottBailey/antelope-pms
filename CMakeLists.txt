@@ -7,6 +7,8 @@ include( ./common.cmake REQUIRED )
 
 
 
+add_subdirectory( depends )
+
 add_subdirectory( common )
 add_subdirectory( c )
 add_subdirectory( cpp )
