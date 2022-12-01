@@ -9,6 +9,12 @@ include( ./common.cmake REQUIRED )
 add_subdirectory( depends )
 
 
-add_subdirectory( common )
-add_subdirectory( c )
-add_subdirectory( cpp )
+add_subdirectory( apack-c )
+add_subdirectory( apack-cpp )
+
+
+option(BUILD_TESTS "Build and run the tests." On)
+if(BUILD_TESTS)
+  enable_testing()
+  add_subdirectory( test )
+endif()
