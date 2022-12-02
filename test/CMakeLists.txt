@@ -10,6 +10,6 @@ foreach(file_name IN ITEMS ${src_cpp})
   set(name "test-${name}")
 
   add_executable(${name} ${file_name})
-  target_link_libraries(${name} apack-c yaml toml)
+  target_link_libraries(${name} project-parser)
   add_test(NAME ${name} COMMAND ${name})
 endforeach()

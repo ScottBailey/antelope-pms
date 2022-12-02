@@ -11,6 +11,7 @@ add_subdirectory( depends )
 
 add_subdirectory( apack-c )
 add_subdirectory( apack-cpp )
+add_subdirectory( project-parser )
 
 
 option(BUILD_TESTS "Build and run the tests." On)
